@@ -4,11 +4,12 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #304463;
 }
 
 header {
     text-align: center;
-    background-color: #ffffff;
+    background-color: #FFC7ED;
     padding: 20px;
    
 }
@@ -29,10 +30,21 @@ section {
     background-color: #999999;
     padding: 20px;
     margin: 0 10px;
-    border: 3px solid #000;
+    border: 4px solid #000;
     width: 30%;
     box-sizing: border-box;
+    font-size: 125%;
     
+}
+
+#chicken {
+    background-color: #7D8ABC; 
+}
+#beef {
+    background-color: #7D8ABC; 
+}
+#sushi {
+    background-color: #7D8ABC; 
 }
 
 
@@ -41,28 +53,28 @@ section {
     top: 0;
     right: 0;
     padding: 5px 10px;
-    border: 1px solid #000;
+    border: 3px solid #000;
     font-size: 125%;
     font-weight: bold;
 }
 
 #chicken .section-title {
-    background-color: #D59898; 
+    background-color: #FFC7ED; 
 }
 
 #beef .section-title {
-    background-color: #C14543;
+    background-color: #FFC7ED;
 }
 
 #sushi .section-title {
-    background-color: #E5D198; 
+    background-color: #FFC7ED; 
 }
 
 section p {
     margin-top: 40px; 
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 800px) {
     main {
         flex-direction: column;
