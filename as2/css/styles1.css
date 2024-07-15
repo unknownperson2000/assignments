@@ -1,0 +1,84 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+
+header {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-bottom: 1px solid #a91d1d;
+    color: black;
+}
+
+header h1 {
+    font-size: 1.75em; /* 75% larger than base font size */
+    margin: 0;
+}
+
+/* Main content styles */
+main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 10px;
+}
+
+section {
+    position: relative;
+    background-color: #621717;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #000;
+    flex: 1 1 30%;
+    box-sizing: border-box;
+}
+
+.section-title {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #444;
+    padding: 5px 10px;
+    border: 1px solid #000;
+    font-size: 1.25em; /* 25% larger than base font size */
+    font-weight: bold;
+}
+
+#chicken .section-title {
+    background-color: #D59898;
+}
+
+#beef .section-title {
+    background-color: #C14543;
+}
+
+#sushi .section-title {
+    background-color: #E5D198;
+}
+
+section p {
+    margin-top: 40px; /* Push text down to avoid overlap with section title */
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    #beef {
+        flex: 1 1 100%;
+    }
+
+    #sushi {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    section {
+        flex: 1 1 100%;
+    }
+}
