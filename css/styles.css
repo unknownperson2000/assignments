@@ -1,4 +1,4 @@
-/* General styles */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -8,9 +8,9 @@ body {
 
 header {
     text-align: center;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     padding: 20px;
-    border-bottom: 1px solid #000;
+   
 }
 
 header h1 {
@@ -18,7 +18,6 @@ header h1 {
     margin: 0;
 }
 
-/* Main content styles */
 main {
     display: flex;
     justify-content: space-around;
@@ -27,27 +26,40 @@ main {
 
 section {
     position: relative;
-    background-color: #e0e0e0;
+    background-color: #999999;
     padding: 20px;
     margin: 0 10px;
-    border: 1px solid #000;
+    border: 3px solid #000;
     width: 30%;
     box-sizing: border-box;
+    
 }
+
 
 .section-title {
     position: absolute;
     top: 0;
     right: 0;
-    background-color: #c0c0c0;
     padding: 5px 10px;
     border: 1px solid #000;
     font-size: 125%;
     font-weight: bold;
 }
 
+#chicken .section-title {
+    background-color: #D59898; 
+}
+
+#beef .section-title {
+    background-color: #C14543;
+}
+
+#sushi .section-title {
+    background-color: #E5D198; 
+}
+
 section p {
-    margin-top: 40px; /* Push text down to avoid overlap with section title */
+    margin-top: 40px; 
 }
 
 /* Responsive adjustments */
