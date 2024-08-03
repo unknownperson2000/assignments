@@ -1,0 +1,214 @@
+<!-- <div id="buttonContainer"></div>-->
+<html lang="en">
+
+  <link rel="icon" type="image/png" href="img/ttu.jpg">
+
+<head>
+ 
+    <div class="whatsapp">
+       <i class="bx bxl-whatsapp"></i>
+       <w>+962 779500323</w>
+       <button id="loadContent">click on me</button>
+       <div id="contentContainer"></div>
+    </div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELECTRONS</title>
+    <link rel="stylesheet" href="main.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+</head>
+<body>
+ <header>
+    <div class="header">
+      <h2>Empowering Your World with Cutting-Edge Electronics!</h2>
+    </div>
+    <nav>
+      <div class="navbar1" id="navbar1">
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#contact">Contact </a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#Quick">About</a></li>
+            
+        </ul>
+    </div>
+       <div class="header__icons">
+              <div><a href="#"><i class="bx bx-search"></i></a></div>
+              <div><a href="#"><i class="bx bxs-user"></i></a></div>
+              <div><a href="#"><i class="bx bx-shopping-bag"></i></a></div>
+          </div>
+      </div>
+  </nav>
+   
+  <div id="search-container">
+    <input type="search"id="search-input"placeholder="Search ">
+    <button id="search">Search</button>
+
+<main>
+</header>
+
+<div id="parallax-wrapper">
+  <section id="home" class="home">
+      <div class="p-one parallax-inner">
+          <div class="headline">
+              <div>
+                  <h2>Discover the Future of Electronics Today!</h2>
+                  <p>
+                    Welcome to your go-to destination for the latest electronics.
+                   Explore top-tier gadgets, smart home devices, and more, 
+                   all at unbeatable prices. Experience innovation and convenience,
+                    all in one place. Shop now and elevate your tech game!
+                  </p>
+                  <button class="outline_btn">Start Now</button>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+</div>
+
+</section>
+
+<section id="categories" class="categories">
+ <h2>Categories</h2>
+  <p>
+     Explore our extensive range of electronic products, including the latest
+      smartphones,  and cutting-edge smart home devices.
+  </p><p> Each category
+       features top brands and the newest technology to meet all your personal 
+       and professional needs.
+   </p>
+   
+   
+   <div class="category_btn"  >
+    <div id="buttons" >
+        <button class="button-value"  onclick="filterProduct('*')">All</button>
+        <button class="button-value"  onclick="filterProduct('b')">Big Sale</button>
+        <button class="button-value"  onclick="filterProduct('s')"> Sensors & modules</button>
+        <button class="button-value"  onclick="filterProduct('ar')">Arduino</button>
+        <button class="button-value"  onclick="filterProduct('r')">Raspberry Pi</button>
+        <button class="button-value"  onclick="filterProduct('m')">Motors & Drivers</button>
+        <button class="button-value"  onclick="filterProduct('p')">Power & Battery</button>
+        <button class="button-value"  onclick="filterProduct('l')"> LCDs & LEDs</button>
+        <button class="button-value"  onclick="filterProduct('e')">E-components</button>
+        <button class="button-value"  onclick="filterProduct('k')">Kids Kits</button>
+    </div> 
+   </div>
+    <div id="products"></div>
+</section>
+
+   <section id="Services" class="services">
+    <h2> JORDAN</h2>
+      <p>
+        Explore our extensive range of electronic products, including the latest 
+        smartphones, laptops, and cutting-edge smart home devices. Each category
+         features top brands and the newest technology to meet all your personal
+          and professional needs.
+      </p>
+      <div class="service-container">
+        <div class="service-card">
+            <i class="bx bx-line-chart"></i>
+            <h3>Quality Products</h3>
+            <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia
+            nesciunt facere voluptatibus.
+          </p>
+        </div>
+        <div class="service-card">
+            <i class="bx bxs-plane-alt"></i>
+            <h3>Fast Delivery</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia
+              nesciunt facere voluptatibus.
+            </p>
+          </div>
+          <div class="service-card">
+            <i class="bx bx-support"></i>
+            <h3>24/7 Online </h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia
+              nesciunt facere voluptatibus.
+            </p>
+          </div>
+      </div>
+  </section>
+
+  <section id="contact" class="contact">
+        <h2>Contact us</h2>
+        <p>
+          If you have any questions, need support, or simply want to share your
+         thoughts, we’re here for you! Our dedicated team is ready to assist 
+         with any inquiries about our products, services, or orders.
+         Don't hesitate to reach out via our contact form, and we'll
+         respond promptly to ensure you have the best experience possible.
+         Your feedback is invaluable to us as we strive to continuously improve. Connect with us today and let us help you with all your electronic needs!
+        </p>
+        <div id="contact-container">
+            <input 
+            type="email"
+          id="email-input"
+          placeholder="Enter your email address..">
+          <button id="email">Submit</button>
+          
+        </div>
+    </section>
+    <hr />
+    <footer> 
+        <div id="Quick" class="Quick">
+            <h5>Quick links</h5>
+            <a href="#"><p>Big Sales</p></a>
+            <a href="#"><p>All</p></a>
+            <a href="#"><p>Kids Kits</p></a>
+          </div>
+          <div>
+            <h5>Info</h5>
+            <a href="#"><p>About</p></a>
+            <a href="#"><p>Contact us</p></a>
+            <a href="#"><p>Shipping policy</p></a>
+            <a href="#"><p>Blog</p></a>
+          </div>
+          <div>
+            <h5>Our Job</h5>
+           <p> From our friendly support team to our lightning-fast delivery,
+             we’re dedicated to making every step of your journey with us a
+              happy one.</p>
+           <div>
+            <i class="bx bxl-facebook-square"></i>
+            <i class="bx bxl-instagram"></i>
+            <i class="bx bxl-linkedin"></i>
+            <i class="bx bxl-twitter"></i>
+            <i class="bx bxl-whatsapp"></i>  
+            <i class="bx bxl-youtube"></i>
+           </div>
+          </div>
+    </footer>
+    <div class="navbar">
+      <a href="#" data-target="about">About us</a>
+      <a href="#" data-target="Story">Our Story</a>
+      <a href="#" data-target="mission">Our Mission</a>
+    </div>
+    <main>
+      <section id="about" class="page">
+        <p>Welcome to our website, where innovation meets excellence. We are a passionate team dedicated to delivering
+           top-notch products and services that enhance your life and empower your journey.</p>
+      </section>
+      <section id="Story" class="page" style="display:none;">
+        <p>Founded in 2024, our website began with a simple idea: 
+          to make the world better
+          Since then, we have grown into a thriving community of innovators and 
+          creators committed .</p>
+      </section>
+      
+      <section id="mission" class="page" style="display:none;">
+        <p>At our website, our mission is to ...
+           We strive to offer products and services that are not only of the 
+           highest quality but also sustainable and accessible to everyone.
+           </p>
+      </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
